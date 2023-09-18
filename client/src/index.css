@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* body {
+  margin: 0;
+  background-color: #181818;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+/* $text-color:#b1bdb4;
+
+$black-primary:#16181b;
+$black-secondary:#121417;
+$border-color:#4c4c4c;
+
+$breakpoint-medium:1224px;
+$breakpoint-small:520px; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #16181b;
+  background-attachment: fixed;
+  color: #b1bdb4;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.1px;
+}
+@mixin line-clamp($number) {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: $number;
+  -webkit-box-orient: vertical;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.rhap_container {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.rhap_play-pause-button {
+  color: #ff0000 !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.rhap_play-pause-button:hover {
+  transform: scale(1.2);
+}
+
+.rhap_forward-button,
+.rhap_rewind-button,
+.rhap_skip-button,
+.rhap_volume-button,
+.rhap_repeat-button {
+  transition: all 0.3s ease-in-out;
+}
+.rhap_forward-button:hover,
+.rhap_rewind-button:hover,
+.rhap_skip-button:hover,
+.rhap_volume-button:hover,
+.rhap_repeat-button:hover {
+  transform: scale(1.2);
+  color: #555 !important;
+}
+
+.rhap_progress-filled {
+  background-color: #ff0000 !important;
+}
+
+.rhap_progress-indicator,
+.rhap_volume-indicator {
+  background: #b4b4b4 !important;
+}
+
+.rhap_progress-indicator:hover,
+.rhap_volume-indicator:hover {
+  transform: scale(1.2);
+}
+
+.rhap_download-progress,
+.rhap_volume-bar {
+  background-color: #ff000033 !important;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c7c7c7;
+  border-radius: 1rem;
+}
